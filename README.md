@@ -1,6 +1,8 @@
 # 💫 About Me:
 Android Developer<br>
 
+## Apps:
+[LocalGen](https://app.localizable.io/)
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/a4amanver15) 
