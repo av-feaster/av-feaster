@@ -1,5 +1,5 @@
 # 💫 About Me:
-Android Developer<br>
+Mobile Application Developer<br>
 
 ## Apps:
 [LocalGen](https://app.localizable.io/)
