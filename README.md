@@ -120,7 +120,7 @@ Built for speed, clarity, and effortless consumption.
 ## 📝 Latest on Medium
 
 <!-- MEDIUM_POSTS_START -->
-Updating...
+- [Check out my latest articles on Medium](https://medium.com/@breakwithlimits)
 <!-- MEDIUM_POSTS_END -->
 
 ---
