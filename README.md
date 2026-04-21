@@ -1,12 +1,12 @@
 # Aman Verma
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=On-Device%20AI%20Engineer&fontAlign=50&fontAlignY=40" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=GenAI%20×%20Mobile%20Engineer&fontAlign=50&fontAlignY=40&fontSize=36&animation=fadeIn&color=0:0f0f0f,100:1a1a1a&fontColor=E6C77A" />
 </p>
 
 <p align="center">
-  <b>Building AI systems that run on mobile — not the cloud.</b><br/>
-  <sub>LLMs · Streaming UX · Mobile Infrastructure</sub>
+  <b>Building production-grade mobile systems and AI-powered applications.</b><br/>
+  <sub>iOS · Android · On-device AI · Streaming Systems</sub>
 </p>
 
 <p align="center">
@@ -20,67 +20,92 @@
 
 ---
 
-## What I Build
+## ⚡ What I Do
 
-- On-device LLM runtimes
-- Streaming-first AI interfaces
-- Mobile systems optimized for latency + memory
+I build **mobile systems that handle real-world complexity** —  
+and integrate **AI where it actually improves the experience**.
 
-Most apps depend on APIs.
-
-I build systems that **work without them**.
-
----
-
-## Core Projects
-
-### SwiftLangChain
-LLM orchestration layer for Swift
-
-- Provider-agnostic (OpenAI / Claude / local)
-- Streaming-first design
-- Built for mobile constraints
-
-→ https://github.com/av-feaster/swiftlangchain
+- Architect scalable iOS + Android apps  
+- Build high-performance UI systems  
+- Design streaming-first experiences  
+- Run LLMs on-device when it matters  
 
 ---
 
-### Axiom
-On-device AI runtime for Android
+## 🚀 Core Work
 
-- Runs GGUF / llama.cpp models locally
-- No API calls, no cloud dependency
-- Handles model execution + streaming
+### → SwiftLangChain  
+**LLM infrastructure for Swift (mobile-first)**
 
-→ https://github.com/av-feaster/axiom
+- Provider-agnostic (OpenAI / Claude / local)  
+- Streaming-first design  
+- Built for mobile constraints  
 
----
-
-## Edge > Cloud
-
-- Offline inference is the default
-- Streaming is non-negotiable
-- Replaceability over tight coupling
+🔗 https://github.com/av-feaster/swiftlangchain
 
 ---
 
-## Stack
+### → Axiom  
+**On-device AI runtime for Android**
+
+- Runs GGUF / llama.cpp models locally  
+- No API dependency  
+- Optimized for mobile performance  
+
+🔗 https://github.com/av-feaster/axiom
+
+---
+
+## 🚧 Upcoming
+
+### → Quoted
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/av-feaster/av-feaster/main/assets/quoted.png" width="420"/>
+</p>
+
+<p align="center">
+  <b>Wisdom, Redefined.</b>
+</p>
+
+Short-form ideas. No noise.  
+Built for speed, clarity, and effortless consumption.
+
+<p align="center">
+  📦 <b>Coming Soon · Google Play</b>
+</p>
+
+---
+
+## 🧠 Engineering Approach
+
+- Performance first (latency, memory, smooth UX)  
+- Streaming > blocking  
+- Systems should work under real constraints  
+- AI is a tool — not the product  
+
+---
+
+## 🛠 Stack
 
 **Mobile**
-- Swift (UIKit, SwiftUI)
-- Kotlin (Android, Jetpack)
+- Swift (UIKit, SwiftUI)  
+- Kotlin (Android, Jetpack)  
+- Combine, AVFoundation  
+- RecyclerView / UICollectionView  
 
 **AI**
-- Local LLMs (GGUF / llama.cpp)
-- LLM APIs (OpenAI, Claude)
+- OpenAI, Claude APIs  
+- Local LLMs (GGUF / llama.cpp)  
+- Streaming + prompt pipelines  
 
 **Backend (working knowledge)**
-- Golang (basics)
-- Kotlin SpringBoot (exposure)
+- Golang (basics)  
+- Kotlin SpringBoot (exposure)  
 
 ---
 
-## GitHub
+## 📊 GitHub
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=av-feaster&show_icons=true&hide_border=true" />
@@ -92,14 +117,29 @@ On-device AI runtime for Android
 
 ---
 
-## Philosophy
+## 🤝 Build With Me
 
-> If it needs the cloud, it’s not done.  
-> If it can’t stream, it feels slow.  
-> If it’s not replaceable, it won’t scale.
+Working on something serious in **mobile or AI**?
+
+I’m interested in:
+- AI-powered mobile apps  
+- On-device inference systems  
+- High-performance mobile experiences  
+
+If that’s you → **email me with context**
+
+→ a4amanver15@gmail.com  
+
+---
+
+## ⚙️ Philosophy
+
+> Build systems, not demos.  
+> Optimize for real-world constraints.  
+> Use AI where it actually matters.
 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&color=0:1a1a1a,100:0f0f0f&height=120&text=Let%27s%20Build%20Systems&fontAlign=50&fontAlignY=40&fontSize=24&animation=fadeIn&fontColor=E6C77A" />
 </p>
