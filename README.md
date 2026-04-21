@@ -135,7 +135,7 @@ Built for speed, clarity, and effortless consumption.
         </p>
       </td>
       <td width="30%">
-        <img src="https://raw.githubusercontent.com/av-feaster/av-feaster/main/assets/quoted.png" width="120" height="80" style="border-radius: 8px; object-fit: cover;"/>
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111614.png" width="120" height="80" style="border-radius: 8px; object-fit: cover;"/>
       </td>
     </tr>
   </table>
