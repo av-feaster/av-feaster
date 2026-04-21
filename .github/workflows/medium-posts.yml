@@ -24,6 +24,7 @@ jobs:
           import xml.etree.ElementTree as ET
           import re
           from datetime import datetime
+          import html
 
           # Parse RSS feed
           tree = ET.parse('feed.xml')
@@ -35,12 +36,22 @@ jobs:
               title = item.find('title').text
               link = item.find('link').text
               description = item.find('description').text if item.find('description') is not None else ""
+              content_encoded = item.find('{http://purl.org/rss/1.0/modules/content/}encoded')
               pub_date = item.find('pubDate').text
               
+              # Extract featured image from content
+              featured_image = ""
+              if content_encoded is not None:
+                  content_text = content_encoded.text
+                  # Try to extract first image from content
+                  img_match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', content_text)
+                  if img_match:
+                      featured_image = img_match.group(1)
+              
               # Clean description (strip HTML tags)
-              import re
               clean_desc = re.sub('<[^<]+?>', '', description)
-              clean_desc = clean_desc[:150] + '...' if len(clean_desc) > 150 else clean_desc
+              clean_desc = html.unescape(clean_desc)
+              clean_desc = clean_desc[:200] + '...' if len(clean_desc) > 200 else clean_desc
               
               # Format date
               try:
@@ -49,25 +60,45 @@ jobs:
               except:
                   formatted_date = pub_date
               
-              # Create card-style markdown
-              card = f'''<a href="{link}">
-            <div align="center">
-              <table>
-                <tr>
-                  <td width="100%">
-                    <p align="center">
-                      <strong>{title}</strong>
-                    </p>
-                    <p align="center">
-                      <em>{clean_desc}</em>
-                    </p>
-                    <p align="center">
-                      <small>{formatted_date}</small>
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
+              # Create Medium-style card
+              if featured_image:
+                  card = f'''<a href="{link}">
+            <table>
+              <tr>
+                <td width="70%">
+                  <p>
+                    <strong>{title}</strong>
+                  </p>
+                  <p>
+                    <em>{clean_desc}</em>
+                  </p>
+                  <p>
+                    <small>{formatted_date}</small>
+                  </p>
+                </td>
+                <td width="30%">
+                  <img src="{featured_image}" width="120" height="80" style="border-radius: 8px; object-fit: cover;"/>
+                </td>
+              </tr>
+            </table>
+          </a>'''
+              else:
+                  card = f'''<a href="{link}">
+            <table>
+              <tr>
+                <td width="100%">
+                  <p>
+                    <strong>{title}</strong>
+                  </p>
+                  <p>
+                    <em>{clean_desc}</em>
+                  </p>
+                  <p>
+                    <small>{formatted_date}</small>
+                  </p>
+                </td>
+              </tr>
+            </table>
           </a>'''
               
               posts.append(card)

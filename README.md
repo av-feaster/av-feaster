@@ -121,23 +121,24 @@ Built for speed, clarity, and effortless consumption.
 
 <!-- MEDIUM_POSTS_START -->
 <a href="https://medium.com/@breakwithlimits">
-  <div align="center">
-    <table>
-      <tr>
-        <td width="100%">
-          <p align="center">
-            <strong>Check out my latest articles on Medium</strong>
-          </p>
-          <p align="center">
-            <em>Mobile engineering, AI, and system design insights</em>
-          </p>
-          <p align="center">
-            <small>View all posts →</small>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </div>
+  <table>
+    <tr>
+      <td width="70%">
+        <p>
+          <strong>Check out my latest articles on Medium</strong>
+        </p>
+        <p>
+          <em>Mobile engineering, AI, and system design insights</em>
+        </p>
+        <p>
+          <small>View all posts →</small>
+        </p>
+      </td>
+      <td width="30%">
+        <img src="https://raw.githubusercontent.com/av-feaster/av-feaster/main/assets/quoted.png" width="120" height="80" style="border-radius: 8px; object-fit: cover;"/>
+      </td>
+    </tr>
+  </table>
 </a>
 <!-- MEDIUM_POSTS_END -->
 
