@@ -155,7 +155,7 @@ I’m interested in:
 
 If that’s you → **email me with context**
 
-→ a4amanver15@gmail.com  
+→ <a href="mailto:a4amanver15@gmail.com">a4amanver15@gmail.com</a>  
 
 ---
 
