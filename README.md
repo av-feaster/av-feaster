@@ -120,7 +120,25 @@ Built for speed, clarity, and effortless consumption.
 ## 📝 Latest on Medium
 
 <!-- MEDIUM_POSTS_START -->
-- [Check out my latest articles on Medium](https://medium.com/@breakwithlimits)
+<a href="https://medium.com/@breakwithlimits">
+  <div align="center">
+    <table>
+      <tr>
+        <td width="100%">
+          <p align="center">
+            <strong>Check out my latest articles on Medium</strong>
+          </p>
+          <p align="center">
+            <em>Mobile engineering, AI, and system design insights</em>
+          </p>
+          <p align="center">
+            <small>View all posts →</small>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</a>
 <!-- MEDIUM_POSTS_END -->
 
 ---

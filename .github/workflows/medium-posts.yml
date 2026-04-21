@@ -23,6 +23,7 @@ jobs:
           python3 << 'EOF'
           import xml.etree.ElementTree as ET
           import re
+          from datetime import datetime
 
           # Parse RSS feed
           tree = ET.parse('feed.xml')
@@ -33,32 +34,55 @@ jobs:
           for item in root.findall('.//item')[:3]:
               title = item.find('title').text
               link = item.find('link').text
+              description = item.find('description').text if item.find('description') is not None else ""
               pub_date = item.find('pubDate').text
-              posts.append(f"- [{title}]({link})")
+              
+              # Clean description (strip HTML tags)
+              import re
+              clean_desc = re.sub('<[^<]+?>', '', description)
+              clean_desc = clean_desc[:150] + '...' if len(clean_desc) > 150 else clean_desc
+              
+              # Format date
+              try:
+                  date_obj = datetime.strptime(pub_date, '%a, %d %b %Y %H:%M:%S %Z')
+                  formatted_date = date_obj.strftime('%B %d, %Y')
+              except:
+                  formatted_date = pub_date
+              
+              # Create card-style markdown
+              card = f'''<a href="{link}">
+            <div align="center">
+              <table>
+                <tr>
+                  <td width="100%">
+                    <p align="center">
+                      <strong>{title}</strong>
+                    </p>
+                    <p align="center">
+                      <em>{clean_desc}</em>
+                    </p>
+                    <p align="center">
+                      <small>{formatted_date}</small>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a>'''
+              
+              posts.append(card)
 
           # Update README
           with open('README.md', 'r') as f:
               content = f.read()
 
           # Find and replace Medium section
-          medium_section = '''## 📝 Latest on Medium
-
-          <!-- MEDIUM_POSTS_START -->
-          {}
-          <!-- MEDIUM_POSTS_END -->'''.format('\n          '.join(posts))
-
           if '<!-- MEDIUM_POSTS_START -->' in content:
               content = re.sub(
                   r'<!-- MEDIUM_POSTS_START -->.*?<!-- MEDIUM_POSTS_END -->',
-                  '<!-- MEDIUM_POSTS_START -->\n          {}\n          <!-- MEDIUM_POSTS_END -->'.format('\n          '.join(posts)),
+                  '<!-- MEDIUM_POSTS_START -->\n          \n          '.join(posts) + '\n          <!-- MEDIUM_POSTS_END -->',
                   content,
                   flags=re.DOTALL
-              )
-          else:
-              # Add section after GitHub stats
-              content = content.replace(
-                  '</p>\n\n---\n\n## 🤝 Build With Me',
-                  '</p>\n\n---\n\n## 📝 Latest on Medium\n\n          <!-- MEDIUM_POSTS_START -->\n          {}\n          <!-- MEDIUM_POSTS_END -->\n\n---\n\n## 🤝 Build With Me'.format('\n          '.join(posts))
               )
 
           with open('README.md', 'w') as f:
