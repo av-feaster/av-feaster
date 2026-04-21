@@ -1,0 +1,79 @@
+name: Update Medium Posts
+
+on:
+  schedule:
+    # Runs every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-medium-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Medium RSS feed
+        run: |
+          # Replace YOUR_MEDIUM_USERNAME with your actual Medium username
+          curl -s https://medium.com/feed/@breakwithlimits > feed.xml
+
+      - name: Parse RSS and update README
+        run: |
+          python3 << 'EOF'
+          import xml.etree.ElementTree as ET
+          import re
+
+          # Parse RSS feed
+          tree = ET.parse('feed.xml')
+          root = tree.getroot()
+
+          # Extract latest 3 posts
+          posts = []
+          for item in root.findall('.//item')[:3]:
+              title = item.find('title').text
+              link = item.find('link').text
+              pub_date = item.find('pubDate').text
+              posts.append(f"- [{title}]({link})")
+
+          # Update README
+          with open('README.md', 'r') as f:
+              content = f.read()
+
+          # Find and replace Medium section
+          medium_section = '''## 📝 Latest on Medium
+
+          <!-- MEDIUM_POSTS_START -->
+          {}
+          <!-- MEDIUM_POSTS_END -->'''.format('\n          '.join(posts))
+
+          if '<!-- MEDIUM_POSTS_START -->' in content:
+              content = re.sub(
+                  r'<!-- MEDIUM_POSTS_START -->.*?<!-- MEDIUM_POSTS_END -->',
+                  '<!-- MEDIUM_POSTS_START -->\n          {}\n          <!-- MEDIUM_POSTS_END -->'.format('\n          '.join(posts)),
+                  content,
+                  flags=re.DOTALL
+              )
+          else:
+              # Add section after GitHub stats
+              content = content.replace(
+                  '</p>\n\n---\n\n## 🤝 Build With Me',
+                  '</p>\n\n---\n\n## 📝 Latest on Medium\n\n          <!-- MEDIUM_POSTS_START -->\n          {}\n          <!-- MEDIUM_POSTS_END -->\n\n---\n\n## 🤝 Build With Me'.format('\n          '.join(posts))
+              )
+
+          with open('README.md', 'w') as f:
+              f.write(content)
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --staged --quiet || git commit -m "Update Medium posts [skip ci]"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

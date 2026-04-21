@@ -117,6 +117,14 @@ Built for speed, clarity, and effortless consumption.
 
 ---
 
+## 📝 Latest on Medium
+
+<!-- MEDIUM_POSTS_START -->
+Updating...
+<!-- MEDIUM_POSTS_END -->
+
+---
+
 ## 🤝 Build With Me
 
 Working on something serious in **mobile or AI**?
