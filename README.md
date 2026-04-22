@@ -151,6 +151,22 @@ Built for speed, clarity, and effortless consumption.
       </td>
     </tr>
   </table>
+</a><a href="https://medium.com/@breakwithlimits/you-dont-notice-tech-debt-until-it-owns-your-codebase-f0340f18c8d6?source=rss-2d21a7f41a8b------2">
+  <table>
+    <tr>
+      <td width="100%">
+        <p>
+          <strong>You Don’t Notice Tech Debt — Until It Owns Your Codebase</strong>
+        </p>
+        <p>
+          <em>A cautionary tale of two modules, a looming deadline, and the civil war that happens when architecture meets reality.Continue reading on Medium »</em>
+        </p>
+        <p>
+          <small>April 13, 2026</small>
+        </p>
+      </td>
+    </tr>
+  </table>
 </a><!-- MEDIUM_POSTS_START -->
           
           <a href="https://medium.com/@breakwithlimits/android-lifecycle-in-jetpack-compose-how-activities-viewmodels-composables-work-0da5011653e9?source=rss-2d21a7f41a8b------2">
