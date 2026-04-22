@@ -111,7 +111,7 @@ jobs:
           if '<!-- MEDIUM_POSTS_START -->' in content:
               content = re.sub(
                   r'<!-- MEDIUM_POSTS_START -->.*?<!-- MEDIUM_POSTS_END -->',
-                  '<!-- MEDIUM_POSTS_START -->\n          \n          '.join(posts) + '\n          <!-- MEDIUM_POSTS_END -->',
+                  '<!-- MEDIUM_POSTS_START -->\n          ' + '\n          '.join(posts) + '\n          <!-- MEDIUM_POSTS_END -->',
                   content,
                   flags=re.DOTALL
               )
