@@ -119,28 +119,61 @@ Built for speed, clarity, and effortless consumption.
 
 ## 📝 Latest on Medium
 
-<!-- MEDIUM_POSTS_START -->
-<a href="https://medium.com/@breakwithlimits">
+<a href="https://medium.com/@breakwithlimits/you-dont-notice-tech-debt-until-it-owns-your-codebase-f0340f18c8d6?source=rss-2d21a7f41a8b------2">
   <table>
     <tr>
-      <td width="70%">
+      <td width="100%">
         <p>
-          <strong>Check out my latest articles on Medium</strong>
+          <strong>You Don’t Notice Tech Debt — Until It Owns Your Codebase</strong>
         </p>
         <p>
-          <em>Mobile engineering, AI, and system design insights</em>
+          <em>A cautionary tale of two modules, a looming deadline, and the civil war that happens when architecture meets reality.Continue reading on Medium »</em>
         </p>
         <p>
-          <small>View all posts →</small>
+          <small>April 13, 2026</small>
         </p>
       </td>
-      <td width="30%">
-        <img src="https://raw.githubusercontent.com/av-feaster/av-feaster/main/assets/medium.png" width="120" height="80" style="border-radius: 8px; object-fit: cover;"/>
+    </tr>
+  </table>
+</a><!-- MEDIUM_POSTS_START -->
+          
+          <a href="https://medium.com/@breakwithlimits/android-lifecycle-in-jetpack-compose-how-activities-viewmodels-composables-work-0da5011653e9?source=rss-2d21a7f41a8b------2">
+  <table>
+    <tr>
+      <td width="100%">
+        <p>
+          <strong>Android Lifecycle in Jetpack Compose: How Activities, ViewModels & Composables Work…</strong>
+        </p>
+        <p>
+          <em>NON-MEMBERContinue reading on Medium »</em>
+        </p>
+        <p>
+          <small>February 25, 2026</small>
+        </p>
+      </td>
+    </tr>
+  </table>
+</a><!-- MEDIUM_POSTS_START -->
+          
+          <a href="https://medium.com/@breakwithlimits/creating-a-splash-screen-in-aural-app-android-kotlin-jetpack-compose-bdf8a45c3910?source=rss-2d21a7f41a8b------2">
+  <table>
+    <tr>
+      <td width="100%">
+        <p>
+          <strong>Creating a Splash Screen in “Aural” App (Android + Kotlin + Jetpack Compose)</strong>
+        </p>
+        <p>
+          <em>When a user opens your app for the first time, the very first few seconds matter.
+ That short moment before the main screen loads — that’s…Continue reading on Medium »</em>
+        </p>
+        <p>
+          <small>October 21, 2025</small>
+        </p>
       </td>
     </tr>
   </table>
 </a>
-<!-- MEDIUM_POSTS_END -->
+          <!-- MEDIUM_POSTS_END -->
 
 ---
 
