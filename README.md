@@ -120,6 +120,23 @@ Built for speed, clarity, and effortless consumption.
 ## 📝 Latest on Medium
 
 <!-- MEDIUM_POSTS_START -->
+          <a href="https://medium.com/@breakwithlimits/understanding-context-in-android-when-to-use-it-and-why-it-matters-76ed16d8c2b3?source=rss-2d21a7f41a8b------2">
+  <table>
+    <tr>
+      <td width="100%">
+        <p>
+          <strong>Understanding Context in Android: When to Use It and Why It Matters</strong>
+        </p>
+        <p>
+          <em>NON-MEMBERContinue reading on Medium »</em>
+        </p>
+        <p>
+          <small>April 25, 2026</small>
+        </p>
+      </td>
+    </tr>
+  </table>
+</a>
           <a href="https://medium.com/@breakwithlimits/you-dont-notice-tech-debt-until-it-owns-your-codebase-f0340f18c8d6?source=rss-2d21a7f41a8b------2">
   <table>
     <tr>
@@ -149,24 +166,6 @@ Built for speed, clarity, and effortless consumption.
         </p>
         <p>
           <small>February 25, 2026</small>
-        </p>
-      </td>
-    </tr>
-  </table>
-</a>
-          <a href="https://medium.com/@breakwithlimits/creating-a-splash-screen-in-aural-app-android-kotlin-jetpack-compose-bdf8a45c3910?source=rss-2d21a7f41a8b------2">
-  <table>
-    <tr>
-      <td width="100%">
-        <p>
-          <strong>Creating a Splash Screen in “Aural” App (Android + Kotlin + Jetpack Compose)</strong>
-        </p>
-        <p>
-          <em>When a user opens your app for the first time, the very first few seconds matter.
- That short moment before the main screen loads — that’s…Continue reading on Medium »</em>
-        </p>
-        <p>
-          <small>October 21, 2025</small>
         </p>
       </td>
     </tr>
