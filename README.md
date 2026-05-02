@@ -120,6 +120,23 @@ Built for speed, clarity, and effortless consumption.
 ## 📝 Latest on Medium
 
 <!-- MEDIUM_POSTS_START -->
+          <a href="https://medium.com/@breakwithlimits/android-development-just-changed-forever-googles-android-cli-ai-agents-are-a-massive-6cbbc70d1439?source=rss-2d21a7f41a8b------2">
+  <table>
+    <tr>
+      <td width="100%">
+        <p>
+          <strong>Android Development Just Changed Forever: Google’s Android CLI + AI Agents Are a Massive…</strong>
+        </p>
+        <p>
+          <em>NON-MEMBERContinue reading on Medium »</em>
+        </p>
+        <p>
+          <small>May 02, 2026</small>
+        </p>
+      </td>
+    </tr>
+  </table>
+</a>
           <a href="https://medium.com/@breakwithlimits/understanding-context-in-android-when-to-use-it-and-why-it-matters-76ed16d8c2b3?source=rss-2d21a7f41a8b------2">
   <table>
     <tr>
@@ -149,23 +166,6 @@ Built for speed, clarity, and effortless consumption.
         </p>
         <p>
           <small>April 13, 2026</small>
-        </p>
-      </td>
-    </tr>
-  </table>
-</a>
-          <a href="https://medium.com/@breakwithlimits/android-lifecycle-in-jetpack-compose-how-activities-viewmodels-composables-work-0da5011653e9?source=rss-2d21a7f41a8b------2">
-  <table>
-    <tr>
-      <td width="100%">
-        <p>
-          <strong>Android Lifecycle in Jetpack Compose: How Activities, ViewModels & Composables Work…</strong>
-        </p>
-        <p>
-          <em>NON-MEMBERContinue reading on Medium »</em>
-        </p>
-        <p>
-          <small>February 25, 2026</small>
         </p>
       </td>
     </tr>
