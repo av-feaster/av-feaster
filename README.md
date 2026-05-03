@@ -120,6 +120,26 @@ Built for speed, clarity, and effortless consumption.
 ## 📝 Latest on Medium
 
 <!-- MEDIUM_POSTS_START -->
+          <a href="https://medium.com/@breakwithlimits/vectify-svg-compose-drawables-in-batch-not-one-dialog-at-a-time-016dbfae1b15?source=rss-2d21a7f41a8b------2">
+  <table>
+    <tr>
+      <td width="70%">
+        <p>
+          <strong>Vectify: SVG → Compose drawables in batch, not one dialog at a time</strong>
+        </p>
+        <p>
+          <em></em>
+        </p>
+        <p>
+          <small>May 02, 2026</small>
+        </p>
+      </td>
+      <td width="30%">
+        <img src="https://cdn-images-1.medium.com/max/128/1*d25ARahqo0l683LLHFVyJg@2x.png" width="120" height="80" style="border-radius: 8px; object-fit: cover;"/>
+      </td>
+    </tr>
+  </table>
+</a>
           <a href="https://medium.com/@breakwithlimits/android-development-just-changed-forever-googles-android-cli-ai-agents-are-a-massive-6cbbc70d1439?source=rss-2d21a7f41a8b------2">
   <table>
     <tr>
@@ -149,23 +169,6 @@ Built for speed, clarity, and effortless consumption.
         </p>
         <p>
           <small>April 25, 2026</small>
-        </p>
-      </td>
-    </tr>
-  </table>
-</a>
-          <a href="https://medium.com/@breakwithlimits/you-dont-notice-tech-debt-until-it-owns-your-codebase-f0340f18c8d6?source=rss-2d21a7f41a8b------2">
-  <table>
-    <tr>
-      <td width="100%">
-        <p>
-          <strong>You Don’t Notice Tech Debt — Until It Owns Your Codebase</strong>
-        </p>
-        <p>
-          <em>A cautionary tale of two modules, a looming deadline, and the civil war that happens when architecture meets reality.Continue reading on Medium »</em>
-        </p>
-        <p>
-          <small>April 13, 2026</small>
         </p>
       </td>
     </tr>
